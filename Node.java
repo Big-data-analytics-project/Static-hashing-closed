@@ -1,6 +1,5 @@
 
 // This class implements a node/element of a hash table 
-// Each 
 
 public class Node<K, V>{
 	V value;
