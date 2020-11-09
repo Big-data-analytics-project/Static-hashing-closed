@@ -47,17 +47,7 @@ public class HashMap<K,V> {
 		return key.hashCode();
 	}
 
-	// Hash function
-	
-	/*private int getIndex(K key) throws NoSuchAlgorithmException
-	{
-		MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
-		messageDigest.update(((String) key).getBytes());
-		String stringHash = new String(messageDigest.digest());
-		return (( % nbucketss)+nbucketss)%nbucketss; 
-	}*/
-	
-	
+	// Hash function	
 	private int getIndex(K key)
 	{
 		int hashCode = hashCode(key);
